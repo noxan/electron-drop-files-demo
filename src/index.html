@@ -15,7 +15,7 @@
 
       document.body.addEventListener("drop", evt => {
         evt.preventDefault();
-        console.log(evt.dataTransfer);
+        console.log(evt.dataTransfer.files[0]);
       });
     </script>
   </body>
