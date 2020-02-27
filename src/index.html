@@ -8,5 +8,11 @@
   <body>
     <h1>💖 Hello World!</h1>
     <p>Welcome to your Electron application.</p>
+    <script>
+      document.body.addEventListener("drop", evt => {
+        evt.preventDefault();
+        console.log(evt);
+      });
+    </script>
   </body>
 </html>
